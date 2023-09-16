@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledInputText = styled.input`
+const StyledInput = styled.input`
     grid-area: search;
     border: none;
     border-radius: 8px;
@@ -17,12 +17,16 @@ const StyledInputText = styled.input`
     &:focus {
         outline: none;
     }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.24);
+    }
 `
 
-function InputText({ placeholder }) {
+function Input({ placeholder }) {
     return (
-        <StyledInputText type="text" placeholder={placeholder} />
+        <StyledInput type="text" placeholder={placeholder} />
     )
 }
 
-export default InputText
+export default Input
