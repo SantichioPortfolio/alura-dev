@@ -1,5 +1,7 @@
+import ColorSelector from "@/components/ColorSelector"
 import DropDown from "@/components/DropDown"
 import Input from "@/components/Input"
+import LightBtn from "@/components/LightBtn"
 import TextArea from "@/components/TextArea"
 import styled from "styled-components"
 
@@ -40,7 +42,9 @@ function CodeConfig ({ languages }) {
                         id={languages.id}
                         options={languages.options}
                     />
+                    <ColorSelector />
                 </div>
+                <LightBtn label="Save project" />
             </Container>
         </>
     )
