@@ -16,7 +16,7 @@ const menu = [
     {
         title: 'Community',
         icon: './community-icon.svg',
-        path: '/community'
+        path: '/community',
     }
 ]
 
