@@ -1,8 +1,9 @@
+import { useColor } from "@/common/context/ColorContext"
 import styled from "styled-components"
 
 const Container = styled.div`
     border-radius: 8px;
-    background: #6BD1FF;
+    background: ${props => props.$bgColor};
     padding: 32px;
     height: 50vh;
     position: relative;
@@ -31,8 +32,10 @@ const Container = styled.div`
 `
 
 function Code () {
+    const { color } = useColor()
+
     return (
-        <Container>
+        <Container $bgColor={color}>
             <img src="./mac-buttons.svg" alt="Decorative buttons" />
             <textarea></textarea>
         </Container>

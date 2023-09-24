@@ -1,3 +1,6 @@
+'use client'
+
+import { useColor } from "@/common/context/ColorContext"
 import styled from "styled-components"
 
 const StyledInput = styled.input`
@@ -11,8 +14,10 @@ const StyledInput = styled.input`
 `
 
 function ColorSelector() {
+    const { color, setColor } = useColor();
+
     return (
-        <StyledInput type="color"></StyledInput>
+        <StyledInput type="color" value={color} onChange={(e) => setColor(e.target.value)} />
     )
 }
 
