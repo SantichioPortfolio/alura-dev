@@ -12,6 +12,18 @@ const StyledBtn = styled.button`
     font-weight: 400;
     line-height: 24px; /* 150% */
     cursor: pointer;
+
+    &:hover {
+        background-color: #7BA4FC;
+    }
+
+    &:active {
+        outline: 4px solid rgba(80, 129, 251, 0.72);
+    }
+
+    &:focus {
+        background-color: #7BA4FC;
+    }
 `
 
 function LightBtn({ label }) {

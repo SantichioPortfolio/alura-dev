@@ -4,8 +4,7 @@ import Logo from "@/components/Logo"
 import Input from "@/components/Input"
 import ProfileIcon from "@/components/ProfileIcon"
 import Aside from "@/components/patterns/Aside"
-import CodeEditor from "@/components/patterns/CodeEditor"
-import CodeConfig from "@/components/patterns/CodeConfig"
+import Card from "@/components/patterns/Card"
 
 const menu = [
     {
@@ -23,10 +22,10 @@ const menu = [
 const StyledMain = styled.main`
     grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
-        "code config";
+        "cards";
     column-gap: 40px;
 `
 
@@ -44,7 +43,7 @@ function codeEditor() {
                 pagesList={menu} 
             />
             <StyledMain>
-                
+                <Card />
             </StyledMain>
         </>
     )

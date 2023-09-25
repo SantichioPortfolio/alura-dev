@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
     border-radius: 8px;
-    background: ${props => props.$bgColor};
+    background-color: ${props => props.$bgColor};
     padding: 32px;
     height: 50vh;
     position: relative;
