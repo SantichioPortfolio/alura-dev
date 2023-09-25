@@ -6,6 +6,7 @@ import ProfileIcon from "@/components/ProfileIcon"
 import Aside from "@/components/patterns/Aside"
 import CodeEditor from "@/components/patterns/CodeEditor"
 import CodeConfig from "@/components/patterns/CodeConfig"
+import { ColorProvider } from "@/common/context/ColorContext"
 
 const menu = [
     {
@@ -63,8 +64,10 @@ function codeEditor() {
                 pagesList={menu} 
             />
             <StyledMain>
-                <CodeEditor />
-                <CodeConfig languages={languages}/>
+                <ColorProvider>
+                    <CodeEditor />
+                    <CodeConfig languages={languages}/>
+                </ColorProvider>
             </StyledMain>
         </>
     )

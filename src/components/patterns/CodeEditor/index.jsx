@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import Code from "./Code"
 import Btn from "@/components/Btn"
-import { ColorProvider, useColor } from "@/common/context/ColorContext"
 
 const Container = styled.div`
     display: flex;
@@ -12,9 +11,7 @@ const Container = styled.div`
 function CodeEditor() {
     return (
         <Container>
-            <ColorProvider>
-                <Code />
-            </ColorProvider>
+            <Code />
             <Btn label="View with higlight" />
         </Container>
     )

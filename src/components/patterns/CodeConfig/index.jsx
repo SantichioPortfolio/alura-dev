@@ -1,4 +1,3 @@
-import { ColorProvider } from "@/common/context/ColorContext"
 import ColorSelector from "@/components/ColorSelector"
 import DropDown from "@/components/DropDown"
 import Input from "@/components/Input"
@@ -43,9 +42,7 @@ function CodeConfig ({ languages }) {
                         id={languages.id}
                         options={languages.options}
                     />
-                    <ColorProvider>
-                        <ColorSelector />
-                    </ColorProvider>
+                    <ColorSelector />
                 </div>
                 <LightBtn label="Save project" />
             </Container>
